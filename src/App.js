@@ -1,10 +1,12 @@
 import "./App.css";
+import { Box } from "./AppStyles";
+import HomePage from "./Pages/HomePage";
 
 function App() {
   return (
-    <div className="App">
-      <h1>GGBergen</h1>
-    </div>
+    <Box className="bgImg">
+      <HomePage />
+    </Box>
   );
 }
 
