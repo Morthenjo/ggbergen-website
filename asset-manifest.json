@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ggbergen-website/static/css/main.754ebb54.css",
+    "main.js": "/ggbergen-website/static/js/main.761aeb37.js",
+    "index.html": "/ggbergen-website/index.html",
+    "main.754ebb54.css.map": "/ggbergen-website/static/css/main.754ebb54.css.map",
+    "main.761aeb37.js.map": "/ggbergen-website/static/js/main.761aeb37.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.754ebb54.css",
+    "static/js/main.761aeb37.js"
+  ]
+}
