@@ -1,4 +1,8 @@
-body {
+body,
+h1,
+h2,
+h3,
+p {
   margin: 0;
   padding: 0;
 }
@@ -9,4 +13,30 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  filter: blur(4px);
+  overflow: hidden;
+}
+
+.navBtn {
+  display: inline;
+  font-size: 48px;
+  margin-right: 2rem;
+  color: rgb(184, 184, 184);
+  text-decoration: none;
+}
+
+.navBtn:hover {
+  background-color: rgb(33, 33, 33);
+}
+
+.activeStyle {
+  display: inline;
+  font-size: 48px;
+  margin-right: 2rem;
+  color: white;
+  text-decoration: underline;
+}
+
+.activeStyle:hover {
+  background-color: rgb(33, 33, 33);
 }
