@@ -5,6 +5,9 @@ function App() {
   return (
     <>
       <Navbar />
+      <div>
+        <div className="bgImg" />
+      </div>
     </>
   );
 }

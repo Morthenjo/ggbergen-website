@@ -1,5 +1,11 @@
+import { BgText } from "../AppStyles";
+
 const ErrorPage = () => {
-  return <h1>Leave, leave before the admin bans you!</h1>;
+  return (
+    <BgText>
+      <h1>Leave, leave before the admin bans you!</h1>;
+    </BgText>
+  );
 };
 
 export default ErrorPage;

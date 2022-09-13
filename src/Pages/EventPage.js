@@ -1,5 +1,11 @@
+import { BgText } from "../AppStyles";
+
 const EventPage = () => {
-  return <h1>Her kommer Eventer</h1>;
+  return (
+    <BgText>
+      <h1>Her kommer Eventer</h1>
+    </BgText>
+  );
 };
 
 export default EventPage;

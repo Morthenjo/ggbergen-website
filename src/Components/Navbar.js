@@ -3,10 +3,11 @@ import AboutPage from "../Pages/AboutPage";
 import ErrorPage from "../Pages/ErrorPage";
 import EventPage from "../Pages/EventPage";
 import HomePage from "../Pages/HomePage";
-import { Logo, LogoDiv, StyledNav } from "../Styles/NavbarStyles";
+import { DiscordDiv, Logo, LogoDiv, StyledNav } from "../Styles/NavbarStyles";
 import GGBergenLogo from "../Images/GGBergenlog.png";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import DiscordLogo from "../Images/discordlogo.png";
 
 const languages = [
   { value: "", text: "Language" },
@@ -58,6 +59,15 @@ const Navbar = () => {
             );
           })}
         </select>
+        <DiscordDiv>
+          <a
+            href="https://discord.gg/UwUwsFa"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <Logo src={DiscordLogo} alt="Discord sin logo"></Logo>
+          </a>
+        </DiscordDiv>
       </StyledNav>
       <Routes>
         <Route path="*" element={<ErrorPage />} />

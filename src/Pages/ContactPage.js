@@ -1,7 +1,11 @@
+import { BgText } from "../AppStyles";
+
 const ContactPage = () => {
   return (
     <>
-      <h1>Kontakt oss</h1>
+      <BgText>
+        <h1>Kontakt oss</h1>
+      </BgText>
     </>
   );
 };

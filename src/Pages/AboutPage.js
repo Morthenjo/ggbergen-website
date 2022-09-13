@@ -1,7 +1,11 @@
+import { BgText } from "../AppStyles";
+
 const AboutPage = () => {
   return (
     <>
-      <h1>Om GGBergen</h1>
+      <BgText>
+        <h1>Om GGBergen</h1>
+      </BgText>
     </>
   );
 };
