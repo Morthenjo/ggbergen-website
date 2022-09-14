@@ -1,3 +1,4 @@
+html,
 body,
 h1,
 h2,
@@ -5,6 +6,14 @@ h3,
 p {
   margin: 0;
   padding: 0;
+  font-family: "Roboto Mono", monospace;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 .bgImg::before {
@@ -27,8 +36,7 @@ p {
 
 .navBtn {
   display: inline;
-  font-size: 48px;
-  margin-right: 2rem;
+  font-size: 2.5rem;
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
@@ -39,12 +47,21 @@ p {
 
 .activeStyle {
   display: inline;
-  font-size: 48px;
-  margin-right: 2rem;
+  font-size: 2.5rem;
   color: white;
   text-decoration: underline;
 }
 
 .activeStyle:hover {
   background-color: rgb(33, 33, 33);
+}
+
+@media (max-width: 765px) {
+  .navBtn {
+    margin-left: 20%;
+  }
+  .activeStyle {
+    margin-left: 20%;
+    width: 55%;
+  }
 }

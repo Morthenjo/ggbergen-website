@@ -1,11 +1,8 @@
 import styled from "styled-components";
 
 export const Box = styled.div`
-  max-width: 100%;
-  height: 100vh;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
+  width: 80%;
+  margin: 4rem auto;
 `;
 
 export const BgText = styled.div`
@@ -17,11 +14,15 @@ export const BgText = styled.div`
   z-index: 2;
   width: 80%;
   margin: 1% auto 0;
-  padding: 20px;
   text-align: center;
   animation-duration: 0.3s;
-  @media (max-width: 600px) {
-    margin: 0 auto;
-    width: 90%;
+  @media (max-width: 765px) {
+    padding: 0;
+    margin: 0;
+    width: 100%;
   }
+`;
+
+export const Hidden = styled.div`
+  width: 90%;
 `;

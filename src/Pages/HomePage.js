@@ -1,5 +1,7 @@
 import { useTranslation } from "react-i18next";
-import { BgText } from "../AppStyles";
+import { BgText, Box } from "../AppStyles";
+import { HomeImg, HomeLink, HomePageP } from "../Styles/HomeStyles";
+import Header from "../Images/GGBergenlog.png";
 
 const HomePage = () => {
   const { t } = useTranslation();
@@ -7,8 +9,13 @@ const HomePage = () => {
   return (
     <>
       <BgText>
-        <h1>{t("welcome")}</h1>
-        <p>{t("choose")}</p>
+        <Box>
+          <HomeImg src={Header} alt="Logoen til GGBergen" />
+          <HomePageP>{t("intro")}</HomePageP>
+          <HomePageP>{t("intro2")}</HomePageP>
+          <HomePageP>{t("intro3")}</HomePageP>
+          <HomeLink to="/eventer">{t("click here")}</HomeLink>
+        </Box>
       </BgText>
     </>
   );

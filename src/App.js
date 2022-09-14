@@ -1,13 +1,14 @@
 import "./App.css";
+import { Hidden } from "./AppStyles";
 import Navbar from "./Components/Navbar";
 
 function App() {
   return (
     <>
       <Navbar />
-      <div>
+      <Hidden>
         <div className="bgImg" />
-      </div>
+      </Hidden>
     </>
   );
 }

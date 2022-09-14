@@ -3,11 +3,20 @@ import AboutPage from "../Pages/AboutPage";
 import ErrorPage from "../Pages/ErrorPage";
 import EventPage from "../Pages/EventPage";
 import HomePage from "../Pages/HomePage";
-import { DiscordDiv, Logo, LogoDiv, StyledNav } from "../Styles/NavbarStyles";
+import {
+  DiscordDiv,
+  Logo,
+  LogoDiv,
+  NavbarDiv,
+  NavbarSelect,
+  StyledBurger,
+  StyledNav,
+} from "../Styles/NavbarStyles";
 import GGBergenLogo from "../Images/GGBergenlog.png";
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import DiscordLogo from "../Images/discordlogo.png";
+import FindUsPage from "../Pages/FindUsPage";
 
 const languages = [
   { value: "", text: "Language" },
@@ -25,57 +34,89 @@ const Navbar = () => {
     window.location.replace(loc + "?lng=" + e.target.value);
   };
 
+  const [active, setActive] = useState(false);
+
+  const menuToggle = () => {
+    console.log("yo");
+    setActive(!active);
+  };
+
+  const closeMenu = (e) => {
+    if (menu.current && active && !menu.current.contains(e.target)) {
+      setActive(false);
+    }
+  };
+
+  const menu = useRef(null);
+  document.addEventListener("mousedown", closeMenu);
+
   return (
-    <div>
-      <StyledNav>
-        <NavLink
-          to="/"
-          end
-          className={({ isActive }) => (isActive ? "activeStyle" : "navBtn")}
-        >
-          <LogoDiv>
-            <Logo src={GGBergenLogo} alt="GGBergen sin logo"></Logo>
-          </LogoDiv>
-        </NavLink>
-        <NavLink
-          to="/about"
-          end
-          className={({ isActive }) => (isActive ? "activeStyle" : "navBtn")}
-        >
-          {t("about")}
-        </NavLink>
-        <NavLink
-          to="/eventer"
-          className={({ isActive }) => (isActive ? "activeStyle" : "navBtn")}
-        >
-          {t(`eventer`)}
-        </NavLink>
-        <select value={lang} onChange={handleChange}>
-          {languages.map((item) => {
-            return (
-              <option key={item.value} value={item.value}>
-                {item.text}
-              </option>
-            );
-          })}
-        </select>
-        <DiscordDiv>
-          <a
-            href="https://discord.gg/UwUwsFa"
-            target="_blank"
-            rel="noreferrer noopener"
+    <>
+      <div ref={menu}>
+        <StyledNav active={active}>
+          <NavLink
+            to="/"
+            end
+            className={({ isActive }) => (isActive ? "activeStyle" : "navBtn")}
           >
-            <Logo src={DiscordLogo} alt="Discord sin logo"></Logo>
-          </a>
-        </DiscordDiv>
-      </StyledNav>
+            <LogoDiv>
+              <Logo src={GGBergenLogo} alt="GGBergen sin logo"></Logo>
+            </LogoDiv>
+          </NavLink>
+          <NavLink
+            to="/location"
+            end
+            className={({ isActive }) => (isActive ? "activeStyle" : "navBtn")}
+          >
+            {t("location")}
+          </NavLink>
+          <NavLink
+            to="/about"
+            end
+            className={({ isActive }) => (isActive ? "activeStyle" : "navBtn")}
+          >
+            {t("about")}
+          </NavLink>
+          <NavLink
+            to="/eventer"
+            className={({ isActive }) => (isActive ? "activeStyle" : "navBtn")}
+          >
+            {t(`eventer`)}
+          </NavLink>
+          <NavbarDiv>
+            <NavbarSelect value={lang} onChange={handleChange}>
+              {languages.map((item) => {
+                return (
+                  <option key={item.value} value={item.value}>
+                    {item.text}
+                  </option>
+                );
+              })}
+            </NavbarSelect>
+            <DiscordDiv>
+              <a
+                href="https://discord.gg/UwUwsFa"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <Logo src={DiscordLogo} alt="Discord sin logo"></Logo>
+              </a>
+            </DiscordDiv>
+          </NavbarDiv>
+        </StyledNav>
+        <StyledBurger
+          src={require("../Images/burger.png")}
+          onClick={menuToggle}
+        />
+      </div>
       <Routes>
         <Route path="*" element={<ErrorPage />} />
         <Route path="/" element={<HomePage />} />
+        <Route path="/location" element={<FindUsPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/eventer" element={<EventPage />} />
       </Routes>
-    </div>
+    </>
   );
 };
 
