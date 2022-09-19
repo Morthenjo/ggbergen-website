@@ -1,6 +1,6 @@
 import { BgText } from "../AppStyles";
 
-const AboutPage = () => {
+const PicturePage = () => {
   return (
     <>
       <BgText>
@@ -10,4 +10,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default PicturePage;

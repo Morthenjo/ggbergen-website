@@ -1,5 +1,4 @@
 import { Route, Routes, NavLink } from "react-router-dom";
-import AboutPage from "../Pages/AboutPage";
 import ErrorPage from "../Pages/ErrorPage";
 import EventPage from "../Pages/EventPage";
 import HomePage from "../Pages/HomePage";
@@ -17,6 +16,7 @@ import { useTranslation } from "react-i18next";
 import { useState, useRef } from "react";
 import DiscordLogo from "../Images/discordlogo.png";
 import FindUsPage from "../Pages/FindUsPage";
+import PicturePage from "../Pages/PicturePage";
 
 const languages = [
   { value: "", text: "Language" },
@@ -37,7 +37,6 @@ const Navbar = () => {
   const [active, setActive] = useState(false);
 
   const menuToggle = () => {
-    console.log("yo");
     setActive(!active);
   };
 
@@ -71,11 +70,11 @@ const Navbar = () => {
             {t("location")}
           </NavLink>
           <NavLink
-            to="/about"
+            to="/picture"
             end
             className={({ isActive }) => (isActive ? "activeStyle" : "navBtn")}
           >
-            {t("about")}
+            {t("picture")}
           </NavLink>
           <NavLink
             to="/eventer"
@@ -113,7 +112,7 @@ const Navbar = () => {
         <Route path="*" element={<ErrorPage />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/location" element={<FindUsPage />} />
-        <Route path="/about" element={<AboutPage />} />
+        <Route path="/picture" element={<PicturePage />} />
         <Route path="/eventer" element={<EventPage />} />
       </Routes>
     </>

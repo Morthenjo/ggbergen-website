@@ -34,6 +34,8 @@ export const DiscordDiv = styled.div`
 `;
 
 export const NavbarSelect = styled.select`
+  height: 2rem;
+  margin: auto 0;
   @media (max-width: 765px) {
     margin-left: 20%;
   }
@@ -42,7 +44,7 @@ export const NavbarSelect = styled.select`
 export const NavbarDiv = styled.div`
   display: flex;
   flex-direction: row;
-  @media (max-width: 765px) {
+  @media (min-width: 765px) {
   }
 `;
 
