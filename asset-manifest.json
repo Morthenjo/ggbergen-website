@@ -1,11 +1,25 @@
 {
   "files": {
     "main.css": "/ggbergen-website/static/css/main.201e91b8.css",
-    "main.js": "/ggbergen-website/static/js/main.acbe4377.js",
+    "main.js": "/ggbergen-website/static/js/main.2ad68f98.js",
+    "static/media/12.png": "/ggbergen-website/static/media/12.cfd1479b27e8a8ef177c.png",
+    "static/media/13.jfif": "/ggbergen-website/static/media/13.55e226e55c8f415dc000.jfif",
+    "static/media/6.jpg": "/ggbergen-website/static/media/6.1428bf565c4bfbf09e81.jpg",
+    "static/media/10.jfif": "/ggbergen-website/static/media/10.154c5f00ce23f1e91e1e.jfif",
+    "static/media/1.jpg": "/ggbergen-website/static/media/1.bb2ce3a67376c5284786.jpg",
+    "static/media/3.jpg": "/ggbergen-website/static/media/3.0f72ef6bc64dfccd4539.jpg",
+    "static/media/2.jpg": "/ggbergen-website/static/media/2.2a6e20d8ff71600ce6a5.jpg",
+    "static/media/4.jpg": "/ggbergen-website/static/media/4.e2ff224a0c8cebb1447c.jpg",
     "static/media/gaten.png": "/ggbergen-website/static/media/gaten.4aaca2323f890a8dfb86.png",
+    "static/media/8.jpg": "/ggbergen-website/static/media/8.606b662826d953881752.jpg",
+    "static/media/5.png": "/ggbergen-website/static/media/5.81bbc69dadd537c57ec9.png",
+    "static/media/14.jpg": "/ggbergen-website/static/media/14.46a54fd4470ecd9b023b.jpg",
+    "static/media/11.png": "/ggbergen-website/static/media/11.9d867174437e4f944ea6.png",
     "static/media/background.png": "/ggbergen-website/static/media/background.0d1dadb9ecf4fadbd2a8.png",
+    "static/media/7.jpg": "/ggbergen-website/static/media/7.23b5dc0250dd4b6d0014.jpg",
     "static/media/kart.png": "/ggbergen-website/static/media/kart.f27b6bc60f5282ba47ff.png",
     "static/media/ungdommenshus2.jpg": "/ggbergen-website/static/media/ungdommenshus2.a95fd11339fb18e58709.jpg",
+    "static/media/9.jfif": "/ggbergen-website/static/media/9.1745b7209d97e5c561b2.jfif",
     "static/media/discordlogo.png": "/ggbergen-website/static/media/discordlogo.7fafac6a493e75cd3515.png",
     "static/media/applestore.webp": "/ggbergen-website/static/media/applestore.6f98312b5aa993f19def.webp",
     "static/media/GGBergenlog.png": "/ggbergen-website/static/media/GGBergenlog.ec48fbc9f8c39d5161b9.png",
@@ -13,10 +27,10 @@
     "index.html": "/ggbergen-website/index.html",
     "static/media/getFetch.cjs": "/ggbergen-website/static/media/getFetch.c780682470504fffbd04.cjs",
     "main.201e91b8.css.map": "/ggbergen-website/static/css/main.201e91b8.css.map",
-    "main.acbe4377.js.map": "/ggbergen-website/static/js/main.acbe4377.js.map"
+    "main.2ad68f98.js.map": "/ggbergen-website/static/js/main.2ad68f98.js.map"
   },
   "entrypoints": [
     "static/css/main.201e91b8.css",
-    "static/js/main.acbe4377.js"
+    "static/js/main.2ad68f98.js"
   ]
 }
