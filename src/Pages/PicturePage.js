@@ -1,27 +1,59 @@
+import { Suspense } from "react";
 import { BgText } from "../AppStyles";
+import Loading from "../Components/Loading";
 import Gallery from "../GalleryImages/Gallery";
-import { Flex, GalleryImg } from "../Styles/PictureStyles";
+import { Flex, GalleryImg, ImageContainer } from "../Styles/PictureStyles";
 
 const PicturePage = () => {
   return (
     <>
       <BgText>
-        {/* <Flex> */}
-        <GalleryImg src={Gallery.a} />
-        <GalleryImg src={Gallery.b} />
-        <GalleryImg src={Gallery.c} />
-        <GalleryImg src={Gallery.d} />
-        <GalleryImg src={Gallery.e} />
-        <GalleryImg src={Gallery.f} />
-        <GalleryImg src={Gallery.g} />
-        <GalleryImg src={Gallery.h} />
-        <GalleryImg src={Gallery.i} />
-        <GalleryImg src={Gallery.j} />
-        <GalleryImg src={Gallery.k} />
-        <GalleryImg src={Gallery.l} />
-        <GalleryImg src={Gallery.m} />
-        <GalleryImg src={Gallery.n} />
-        {/* </Flex> */}
+        <Suspense fallback={<Loading />}>
+          <Flex>
+            <ImageContainer>
+              <GalleryImg src={Gallery.a} />
+            </ImageContainer>
+            <ImageContainer>
+              <GalleryImg src={Gallery.b} />
+            </ImageContainer>
+            <ImageContainer>
+              <GalleryImg src={Gallery.c} />
+            </ImageContainer>
+            <ImageContainer>
+              <GalleryImg src={Gallery.d} />
+            </ImageContainer>
+            <ImageContainer>
+              <GalleryImg src={Gallery.e} />
+            </ImageContainer>
+            <ImageContainer>
+              <GalleryImg src={Gallery.f} />
+            </ImageContainer>
+            <ImageContainer>
+              <GalleryImg src={Gallery.g} />
+            </ImageContainer>
+            <ImageContainer>
+              <GalleryImg src={Gallery.h} />
+            </ImageContainer>
+            <ImageContainer>
+              <GalleryImg src={Gallery.i} />
+            </ImageContainer>
+            <ImageContainer>
+              <GalleryImg src={Gallery.j} />
+            </ImageContainer>
+            <ImageContainer>
+              <GalleryImg src={Gallery.k} />
+            </ImageContainer>
+            <ImageContainer>
+              <GalleryImg src={Gallery.l} />
+            </ImageContainer>
+            <ImageContainer>
+              <GalleryImg src={Gallery.m} />
+            </ImageContainer>
+            <ImageContainer>
+              <GalleryImg src={Gallery.n} />
+            </ImageContainer>
+          </Flex>
+        </Suspense>
       </BgText>
     </>
   );
