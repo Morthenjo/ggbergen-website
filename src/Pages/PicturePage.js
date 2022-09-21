@@ -7,8 +7,8 @@ import { Flex, GalleryImg, ImageContainer } from "../Styles/PictureStyles";
 const PicturePage = () => {
   return (
     <>
-      <BgText>
-        <Suspense fallback={<Loading />}>
+      <Suspense fallback={<Loading />}>
+        <BgText>
           <Flex>
             <ImageContainer>
               <GalleryImg src={Gallery.a} />
@@ -53,8 +53,8 @@ const PicturePage = () => {
               <GalleryImg src={Gallery.n} />
             </ImageContainer>
           </Flex>
-        </Suspense>
-      </BgText>
+        </BgText>
+      </Suspense>
     </>
   );
 };

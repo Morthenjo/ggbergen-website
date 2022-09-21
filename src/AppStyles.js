@@ -51,11 +51,13 @@ export const Hidden = styled.div`
 `;
 
 export const LoadingBall = styled.div`
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-  margin: auto;
+  :empty {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
   ::after {
     content: " ";
     display: block;
