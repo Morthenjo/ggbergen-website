@@ -18,15 +18,14 @@ import DiscordLogo from "../Images/discordlogo.png";
 import FindUsPage from "../Pages/FindUsPage";
 import PicturePage from "../Pages/PicturePage";
 
-const languages = [
-  { value: "", text: "Language" },
-  { value: "en", text: "English" },
-  { value: "no", text: "Norwegian" },
-];
-
 const Navbar = () => {
   const { t } = useTranslation();
-  const [lang, setLang] = useState("");
+  const [lang, setLang] = useState();
+  const languages = [
+    { value: "", text: "Language" },
+    { value: "en", text: "English" },
+    { value: "no", text: "Norwegian" },
+  ];
 
   const handleChange = (e) => {
     setLang(e.target.value);

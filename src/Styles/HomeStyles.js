@@ -23,3 +23,7 @@ export const HomeLink = styled(Link)`
   color: red;
   font-size: 1.5rem;
 `;
+
+export const HomePageIframe = styled.iframe`
+  width: 50%;
+`;
