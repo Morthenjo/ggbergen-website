@@ -15,4 +15,7 @@ export const Flex = styled.div`
 export const ImageContainer = styled.div`
   width: 50%;
   overflow: hidden;
+  @media (max-width: 765px) {
+    width: 100%;
+  }
 `;

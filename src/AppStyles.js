@@ -30,7 +30,7 @@ export const FlexReverse = styled.div`
 
 export const BgText = styled.div`
   background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   font-weight: bold;
   border: 3px solid #f1f1f1;

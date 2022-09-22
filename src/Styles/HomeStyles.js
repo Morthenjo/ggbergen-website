@@ -27,3 +27,12 @@ export const HomeLink = styled(Link)`
 export const HomePageIframe = styled.iframe`
   width: 50%;
 `;
+
+export const HomeFlex = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media (min-width: 765px) {
+    flex-direction: row;
+  }
+`;
