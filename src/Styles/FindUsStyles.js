@@ -25,3 +25,21 @@ export const FlexRow = styled.div`
   flex-direction: row;
   margin: 2rem auto 0;
 `;
+
+export const FindUsIframe = styled.iframe`
+  min-width: 50%;
+  @media (max-width: 765px) {
+    max-width: 100%;
+    margin: auto;
+  }
+`;
+
+export const FindUsFlexReverse = styled.div`
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 4rem;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+`;

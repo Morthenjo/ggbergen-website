@@ -13,21 +13,21 @@ import l from "./12.png";
 import m from "./13.jfif";
 import n from "./14.jpg";
 
-const Gallery = {
-  a,
-  b,
-  c,
-  d,
-  e,
-  f,
-  g,
-  h,
-  i,
-  j,
-  k,
-  l,
-  m,
-  n,
-};
+const Gallery = [
+  { img: a },
+  { img: b },
+  { img: c },
+  { img: d },
+  { img: e },
+  { img: f },
+  { img: g },
+  { img: h },
+  { img: i },
+  { img: j },
+  { img: k },
+  { img: l },
+  { img: m },
+  { img: n },
+];
 
 export default Gallery;
