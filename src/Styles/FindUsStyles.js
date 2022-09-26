@@ -15,6 +15,9 @@ export const FindUsP = styled.p`
     margin: 2rem 4rem;
     font-size: 1rem;
   }
+  @media (max-width: 425px) {
+    font-size: 1rem;
+  }
 `;
 
 export const PlayStoreImg = styled.img`

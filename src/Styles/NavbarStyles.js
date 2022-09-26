@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledNav = styled.nav`
   display: flex;
   justify-content: space-around;
-  border-bottom: 5px solid blue;
+  border-bottom: 5px solid white;
   background-color: #ed3232;
   width: 100%;
   transition: 0.2s;
@@ -23,11 +23,15 @@ export const Logo = styled.img`
 export const LogoDiv = styled.div`
   position: relative;
   width: 5rem;
+  @media (max-width: 765px) {
+    margin: 0 auto;
+  }
 `;
 
 export const DiscordDiv = styled.div`
   position: relative;
-  width: 6rem;
+  margin-top: 0.6rem;
+  width: 5rem;
   @media (max-width: 765px) {
     margin-left: 20%;
   }
@@ -52,13 +56,13 @@ export const StyledBurger = styled.img`
   display: none;
   @media (max-width: 765px) {
     position: fixed;
-    top: 5%;
-    left: 2rem;
+    top: 3%;
+    left: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     background: transparent;
     border: none;
     cursor: pointer;

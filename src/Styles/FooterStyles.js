@@ -5,7 +5,7 @@ export const FooterBox = styled.div`
   display: flex;
   background-color: #ed3232;
   margin-top: 1.5rem;
-  border-top: 5px solid blue;
+  border-top: 5px solid white;
   @media (max-width: 1000px) {
     margin-top: 0;
   }
@@ -13,6 +13,9 @@ export const FooterBox = styled.div`
 
 export const FooterLogo = styled.img`
   width: 5rem;
+  @media (max-width: 425px) {
+    width: 3rem;
+  }
 `;
 
 export const FooterFlex = styled.div`

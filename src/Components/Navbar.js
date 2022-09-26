@@ -17,6 +17,7 @@ import { useState, useRef } from "react";
 import DiscordLogo from "../Images/discordlogo.png";
 import FindUsPage from "../Pages/FindUsPage";
 import PicturePage from "../Pages/PicturePage";
+import ContactPage from "../Pages/ContactPage";
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -52,11 +53,7 @@ const Navbar = () => {
     <>
       <div ref={menu}>
         <StyledNav active={active}>
-          <NavLink
-            to="/"
-            end
-            className={({ isActive }) => (isActive ? "activeStyle" : "navBtn")}
-          >
+          <NavLink to="/" end>
             <LogoDiv>
               <Logo src={GGBergenLogo} alt="GGBergen sin logo"></Logo>
             </LogoDiv>
@@ -80,6 +77,12 @@ const Navbar = () => {
             className={({ isActive }) => (isActive ? "activeStyle" : "navBtn")}
           >
             {t(`eventer`)}
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) => (isActive ? "activeStyle" : "navBtn")}
+          >
+            {t(`contact`)}
           </NavLink>
           <NavbarDiv>
             <NavbarSelect value={lang} onChange={handleChange}>
@@ -113,6 +116,7 @@ const Navbar = () => {
         <Route path="/location" element={<FindUsPage />} />
         <Route path="/picture" element={<PicturePage />} />
         <Route path="/eventer" element={<EventPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </>
   );

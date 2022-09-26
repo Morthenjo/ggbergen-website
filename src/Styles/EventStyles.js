@@ -16,6 +16,9 @@ export const EventP = styled.p`
   @media (max-width: 765px) {
     font-size: 1.3rem;
   }
+  @media (max-width: 425px) {
+    font-size: 1rem;
+  }
 `;
 
 export const EventH1 = styled.h1`
@@ -25,5 +28,8 @@ export const EventH1 = styled.h1`
   width: 50%;
   @media (max-width: 765px) {
     width: 100%;
+  }
+  @media (max-width: 425px) {
+    font-size: 1rem;
   }
 `;

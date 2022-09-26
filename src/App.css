@@ -36,7 +36,8 @@ p {
 
 .navBtn {
   display: inline;
-  font-size: 2.5rem;
+  margin-top: 1rem;
+  font-size: 1.6rem;
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
@@ -47,7 +48,8 @@ p {
 
 .activeStyle {
   display: inline;
-  font-size: 2.5rem;
+  margin-top: 1rem;
+  font-size: 1.6rem;
   color: white;
   text-decoration: underline;
 }
