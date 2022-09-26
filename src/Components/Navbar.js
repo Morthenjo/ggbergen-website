@@ -53,7 +53,7 @@ const Navbar = () => {
     <>
       <div ref={menu}>
         <StyledNav active={active}>
-          <NavLink to="/" end>
+          <NavLink to="/" end onClick={menuToggle}>
             <LogoDiv>
               <Logo src={GGBergenLogo} alt="GGBergen sin logo"></Logo>
             </LogoDiv>
@@ -62,6 +62,7 @@ const Navbar = () => {
             to="/location"
             end
             className={({ isActive }) => (isActive ? "activeStyle" : "navBtn")}
+            onClick={menuToggle}
           >
             {t("location")}
           </NavLink>
@@ -69,18 +70,21 @@ const Navbar = () => {
             to="/picture"
             end
             className={({ isActive }) => (isActive ? "activeStyle" : "navBtn")}
+            onClick={menuToggle}
           >
             {t("picture")}
           </NavLink>
           <NavLink
             to="/eventer"
             className={({ isActive }) => (isActive ? "activeStyle" : "navBtn")}
+            onClick={menuToggle}
           >
             {t(`eventer`)}
           </NavLink>
           <NavLink
             to="/contact"
             className={({ isActive }) => (isActive ? "activeStyle" : "navBtn")}
+            onClick={menuToggle}
           >
             {t(`contact`)}
           </NavLink>
