@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ggbergen-website/static/css/main.5aa2d2c0.css",
-    "main.js": "/ggbergen-website/static/js/main.20125f9a.js",
+    "main.js": "/ggbergen-website/static/js/main.e937ddbe.js",
     "static/media/bwdesign.png": "/ggbergen-website/static/media/bwdesign.fa27102f4b03367b53f8.png",
     "static/media/12.png": "/ggbergen-website/static/media/12.cfd1479b27e8a8ef177c.png",
     "static/media/13.jfif": "/ggbergen-website/static/media/13.55e226e55c8f415dc000.jfif",
@@ -33,10 +33,10 @@
     "index.html": "/ggbergen-website/index.html",
     "static/media/getFetch.cjs": "/ggbergen-website/static/media/getFetch.c780682470504fffbd04.cjs",
     "main.5aa2d2c0.css.map": "/ggbergen-website/static/css/main.5aa2d2c0.css.map",
-    "main.20125f9a.js.map": "/ggbergen-website/static/js/main.20125f9a.js.map"
+    "main.e937ddbe.js.map": "/ggbergen-website/static/js/main.e937ddbe.js.map"
   },
   "entrypoints": [
     "static/css/main.5aa2d2c0.css",
-    "static/js/main.20125f9a.js"
+    "static/js/main.e937ddbe.js"
   ]
 }
