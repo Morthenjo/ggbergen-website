@@ -40,6 +40,11 @@ const Navbar = () => {
     setActive(!active);
   };
 
+  const autoClose = () => {
+    window.scrollTo(0, 0);
+    setActive(false);
+  };
+
   const closeMenu = (e) => {
     if (menu.current && active && !menu.current.contains(e.target)) {
       setActive(false);
@@ -53,7 +58,7 @@ const Navbar = () => {
     <>
       <div ref={menu}>
         <StyledNav active={active}>
-          <NavLink to="/" end onClick={menuToggle}>
+          <NavLink to="/" end onClick={autoClose}>
             <LogoDiv>
               <Logo src={GGBergenLogo} alt="GGBergen sin logo"></Logo>
             </LogoDiv>
@@ -62,7 +67,7 @@ const Navbar = () => {
             to="/location"
             end
             className={({ isActive }) => (isActive ? "activeStyle" : "navBtn")}
-            onClick={menuToggle}
+            onClick={autoClose}
           >
             {t("location")}
           </NavLink>
@@ -70,21 +75,21 @@ const Navbar = () => {
             to="/picture"
             end
             className={({ isActive }) => (isActive ? "activeStyle" : "navBtn")}
-            onClick={menuToggle}
+            onClick={autoClose}
           >
             {t("picture")}
           </NavLink>
           <NavLink
             to="/eventer"
             className={({ isActive }) => (isActive ? "activeStyle" : "navBtn")}
-            onClick={menuToggle}
+            onClick={autoClose}
           >
             {t(`eventer`)}
           </NavLink>
           <NavLink
             to="/contact"
             className={({ isActive }) => (isActive ? "activeStyle" : "navBtn")}
-            onClick={menuToggle}
+            onClick={autoClose}
           >
             {t(`contact`)}
           </NavLink>
