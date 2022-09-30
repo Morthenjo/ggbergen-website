@@ -1,10 +1,13 @@
-import { LoadingBall } from "../AppStyles";
+import { LoadingBall, LoadingBg, LoadingH1 } from "../AppStyles";
 
 const Loading = () => {
   return (
-    <div>
-      <LoadingBall />
-    </div>
+    <LoadingBg>
+      <div>
+        <LoadingBall />
+        <LoadingH1>LOADING</LoadingH1>
+      </div>
+    </LoadingBg>
   );
 };
 

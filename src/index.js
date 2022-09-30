@@ -3,10 +3,11 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import { HashRouter } from "react-router-dom";
 import "./i18n.js";
+import Loading from "./Components/Loading";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <Suspense fallback="...Loading">
+  <Suspense fallback=<Loading />>
     <HashRouter>
       <App />
     </HashRouter>

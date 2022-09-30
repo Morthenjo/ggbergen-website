@@ -50,6 +50,21 @@ export const Hidden = styled.div`
   width: 90%;
 `;
 
+export const LoadingBg = styled.div`
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const LoadingH1 = styled.h1`
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+`;
+
 export const LoadingBall = styled.div`
   :empty {
     display: inline-block;
