@@ -1,13 +1,13 @@
 import { useTranslation } from "react-i18next";
-import { BgText, Box } from "../AppStyles";
+import { BgText, Box } from "../../AppStyles";
 import {
   HomeFlex,
   HomeImg,
   HomeLink,
   HomePageIframe,
   HomePageP,
-} from "../Styles/HomeStyles";
-import Header from "../Images/GGBergenlog.png";
+} from "./HomeStyles";
+import Header from "../../Images/GGBergenlog.png";
 
 const HomePage = () => {
   const { t } = useTranslation();

@@ -1,7 +1,7 @@
 import { Route, Routes, NavLink } from "react-router-dom";
-import ErrorPage from "../Pages/ErrorPage";
-import EventPage from "../Pages/EventPage";
-import HomePage from "../Pages/HomePage";
+import ErrorPage from "../../Pages/ErrorPage";
+import EventPage from "../../Pages/eventPage/EventPage";
+import HomePage from "../../Pages/homePage/HomePage";
 import {
   DiscordDiv,
   Logo,
@@ -10,14 +10,14 @@ import {
   NavbarSelect,
   StyledBurger,
   StyledNav,
-} from "../Styles/NavbarStyles";
-import GGBergenLogo from "../Images/GGBergenlog.png";
+} from "./NavbarStyles";
+import GGBergenLogo from "../../Images/GGBergenlog.png";
 import { useTranslation } from "react-i18next";
 import { useState, useRef } from "react";
-import DiscordLogo from "../Images/discordlogo.png";
-import FindUsPage from "../Pages/FindUsPage";
-import PicturePage from "../Pages/PicturePage";
-import ContactPage from "../Pages/ContactPage";
+import DiscordLogo from "../../Images/discordlogo.png";
+import FindUsPage from "../../Pages/findUsPage/FindUsPage";
+import PicturePage from "../../Pages/picturePage/PicturePage";
+import ContactPage from "../../Pages/contactPage/ContactPage";
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -115,7 +115,7 @@ const Navbar = () => {
           </NavbarDiv>
         </StyledNav>
         <StyledBurger
-          src={require("../Images/burger.png")}
+          src={require("../../Images/burger.png")}
           onClick={menuToggle}
         />
       </div>

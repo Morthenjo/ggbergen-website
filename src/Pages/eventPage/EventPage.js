@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
-import { BgText, Box, Flex } from "../AppStyles";
-import Friday from "../Images/fredagsevent.png";
-import Saturday from "../Images/supersmashbros.jfif";
-import { EventH1, EventImg, EventP } from "../Styles/EventStyles";
-import { FindUsFlexReverse } from "../Styles/FindUsStyles";
+import { BgText, Box, Flex } from "../../AppStyles";
+import Friday from "../../Images/fredagsevent.png";
+import Saturday from "../../Images/supersmashbros.jfif";
+import { EventH1, EventImg, EventP } from "./EventStyles";
+import { FindUsFlexReverse } from "../findUsPage/FindUsStyles";
 
 const EventPage = () => {
   const { t } = useTranslation();

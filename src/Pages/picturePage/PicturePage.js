@@ -1,6 +1,6 @@
-import { BgText } from "../AppStyles";
-import Gallery from "../GalleryImages/Gallery";
-import { Flex, GalleryImg, ImageContainer } from "../Styles/PictureStyles";
+import { BgText } from "../../AppStyles";
+import Gallery from "../../GalleryImages/Gallery";
+import { Flex, GalleryImg, ImageContainer } from "./PictureStyles";
 
 const PicturePage = () => {
   return (

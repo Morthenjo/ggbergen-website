@@ -1,15 +1,15 @@
-import { BgText, Box, Flex, FlexReverse } from "../AppStyles";
+import { BgText, Box, Flex, FlexReverse } from "../../AppStyles";
 import {
   FindUsIframe,
   FindUsImg,
   FindUsP,
   FlexRow,
   PlayStoreImg,
-} from "../Styles/FindUsStyles";
-import Ungdomshus from "../Images/ungdommenshus2.jpg";
-import Gaten from "../Images/gaten.png";
-import Google from "../Images/googleplay.png";
-import Apple from "../Images/applestore.webp";
+} from "./FindUsStyles";
+import Ungdomshus from "../../Images/ungdommenshus2.jpg";
+import Gaten from "../../Images/gaten.png";
+import Google from "../../Images/googleplay.png";
+import Apple from "../../Images/applestore.webp";
 import { useTranslation } from "react-i18next";
 
 const FindUsPage = () => {

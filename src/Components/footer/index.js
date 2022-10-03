@@ -9,14 +9,14 @@ import {
   FooterPartnerDiv,
   FooterSocialDiv,
   GGH1,
-} from "../Styles/FooterStyles";
-import Youtube from "../Images/youtube.png";
-import Twitch from "../Images/twitch.png";
-import Discord from "../Images/discord.png";
-import Facebook from "../Images/facebook.png";
-import Bergen from "../Images/bergenkommune.png";
-import Hyperion from "../Images/hyperion.png";
-import BWdesign from "../Images/bwdesign.png";
+} from "./FooterStyles";
+import Youtube from "../../Images/youtube.png";
+import Twitch from "../../Images/twitch.png";
+import Discord from "../../Images/discord.png";
+import Facebook from "../../Images/facebook.png";
+import Bergen from "../../Images/bergenkommune.png";
+import Hyperion from "../../Images/hyperion.png";
+import BWdesign from "../../Images/bwdesign.png";
 
 const Footer = () => {
   return (

@@ -1,16 +1,16 @@
 import { useTranslation } from "react-i18next";
-import { BgText, Box } from "../AppStyles";
+import { BgText, Box } from "../../AppStyles";
 import {
   ContactFlex,
   ContactFlexColumn,
   ContactH1,
   ContactImg,
   ContactP,
-} from "../Styles/ContactStyles";
-import Discord from "../Images/discordlogo.png";
-import Facebook from "../Images/facebook.png";
-import Twitch from "../Images/twitch.png";
-import Youtube from "../Images/youtube.png";
+} from "./ContactStyles";
+import Discord from "../../Images/discordlogo.png";
+import Facebook from "../../Images/facebook.png";
+import Twitch from "../../Images/twitch.png";
+import Youtube from "../../Images/youtube.png";
 
 const ContactPage = () => {
   const { t } = useTranslation();
