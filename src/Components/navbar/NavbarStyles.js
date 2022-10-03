@@ -11,7 +11,7 @@ export const StyledNav = styled.nav`
     position: fixed;
     flex-direction: column;
     padding: 10% 0;
-    transform: translateY(${(props) => (props.active ? "0" : "-100%")});
+    transform: translateY(${(props) => (props.active ? "0" : "-110%")});
   }
 `;
 

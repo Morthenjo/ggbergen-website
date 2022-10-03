@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Background from "./Images/bakgrunn.jfif";
 
 export const Box = styled.div`
   width: 80%;
@@ -43,11 +44,20 @@ export const BgText = styled.div`
     padding: 0;
     margin: 0;
     width: 100%;
+    border: 1px solid rgb(0, 0, 0, 0);
   }
 `;
 
-export const Hidden = styled.div`
-  width: 90%;
+export const BgImg = styled.div`
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(${Background});
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (min-width: 1000px) {
+    background-position: center;
+    background-attachment: fixed;
+  }
 `;
 
 export const LoadingBg = styled.div`

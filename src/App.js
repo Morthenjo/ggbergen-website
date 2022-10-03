@@ -1,16 +1,15 @@
 import "./App.css";
-import { Hidden } from "./AppStyles";
+import { BgImg } from "./AppStyles";
 import Footer from "./Components/footer";
 import Navbar from "./Components/navbar";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Hidden>
-        <div className="bgImg" />
-      </Hidden>
-      <Footer />
+      <BgImg>
+        <Navbar />
+        <Footer />
+      </BgImg>
     </>
   );
 }
