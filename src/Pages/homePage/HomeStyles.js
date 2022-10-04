@@ -20,6 +20,7 @@ export const HomePageP = styled.p`
 export const HomeImg = styled.img`
   margin: 0;
   width: 40%;
+  object-fit: contain;
   @media (max-width: 765px) {
     width: 50%;
     margin: 0 auto;
