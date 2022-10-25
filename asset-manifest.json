@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ggbergen-website/static/css/main.55961477.css",
-    "main.js": "/ggbergen-website/static/js/main.c082edb1.js",
+    "main.js": "/ggbergen-website/static/js/main.1e8bc464.js",
     "static/media/bwdesign.png": "/ggbergen-website/static/media/bwdesign.fa27102f4b03367b53f8.png",
     "static/media/12.png": "/ggbergen-website/static/media/12.cfd1479b27e8a8ef177c.png",
     "static/media/13.jfif": "/ggbergen-website/static/media/13.55e226e55c8f415dc000.jfif",
@@ -23,20 +23,20 @@
     "static/media/bakgrunn.jfif": "/ggbergen-website/static/media/bakgrunn.f7a1379b1b76a945a323.jfif",
     "static/media/ungdommenshus2.jpg": "/ggbergen-website/static/media/ungdommenshus2.a95fd11339fb18e58709.jpg",
     "static/media/9.jfif": "/ggbergen-website/static/media/9.1745b7209d97e5c561b2.jfif",
+    "static/media/Sword.png": "/ggbergen-website/static/media/Sword.3c93e0468043936866c6.png",
     "static/media/discordlogo.png": "/ggbergen-website/static/media/discordlogo.7fafac6a493e75cd3515.png",
     "static/media/hyperion.png": "/ggbergen-website/static/media/hyperion.7a294ba81a72b12be467.png",
     "static/media/bergenkommune.png": "/ggbergen-website/static/media/bergenkommune.3fb9a473a03b2a74fa61.png",
     "static/media/applestore.webp": "/ggbergen-website/static/media/applestore.6f98312b5aa993f19def.webp",
     "static/media/discord.png": "/ggbergen-website/static/media/discord.1208e478adfdd8420c7e.png",
     "static/media/GGBergenlog.png": "/ggbergen-website/static/media/GGBergenlog.ec48fbc9f8c39d5161b9.png",
-    "static/media/burger.png": "/ggbergen-website/static/media/burger.77d32aa306a799871731.png",
     "index.html": "/ggbergen-website/index.html",
     "static/media/getFetch.cjs": "/ggbergen-website/static/media/getFetch.c780682470504fffbd04.cjs",
     "main.55961477.css.map": "/ggbergen-website/static/css/main.55961477.css.map",
-    "main.c082edb1.js.map": "/ggbergen-website/static/js/main.c082edb1.js.map"
+    "main.1e8bc464.js.map": "/ggbergen-website/static/js/main.1e8bc464.js.map"
   },
   "entrypoints": [
     "static/css/main.55961477.css",
-    "static/js/main.c082edb1.js"
+    "static/js/main.1e8bc464.js"
   ]
 }
