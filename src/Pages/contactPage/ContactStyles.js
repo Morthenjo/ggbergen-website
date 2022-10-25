@@ -14,17 +14,19 @@ export const ContactP = styled.p`
 export const ContactFlex = styled.div`
   display: flex;
   flex-wrap: wrap;
+  gap: 3rem;
   margin-bottom: 5rem;
   width: 100%;
 `;
 
 export const ContactFlexColumn = styled.div`
   flex-direction: column;
-  width: 50%;
+  flex-wrap: wrap;
+  width: 200px;
   margin: auto;
 
   @media (max-width: 425px) {
-    width: 70%;
+    width: 110px;
   }
 `;
 
@@ -33,7 +35,8 @@ export const ContactImgDiv = styled.div`
 `;
 
 export const ContactImg = styled.img`
-  width: 50%;
+  width: 5rem;
+  object-fit: contain;
 `;
 
 export const ContactH1 = styled.h1`
@@ -41,6 +44,6 @@ export const ContactH1 = styled.h1`
   margin: 1rem;
   padding: 0;
   @media (max-width: 425px) {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 `;

@@ -8,7 +8,6 @@ import {
   LogoDiv,
   NavbarDiv,
   NavbarSelect,
-  StyledBurger,
   StyledNav,
 } from "./NavbarStyles";
 import GGBergenLogo from "../../Images/GGBergenlog.png";
@@ -18,6 +17,7 @@ import DiscordLogo from "../../Images/discordlogo.png";
 import FindUsPage from "../../Pages/findUsPage/FindUsPage";
 import PicturePage from "../../Pages/picturePage/PicturePage";
 import ContactPage from "../../Pages/contactPage/ContactPage";
+import { Hamburger } from "./hamburger";
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -114,10 +114,7 @@ const Navbar = () => {
             </DiscordDiv>
           </NavbarDiv>
         </StyledNav>
-        <StyledBurger
-          src={require("../../Images/burger.png")}
-          onClick={menuToggle}
-        />
+        <Hamburger active={active} onClick={menuToggle} />
       </div>
       <Routes>
         <Route path="*" element={<ErrorPage />} />
