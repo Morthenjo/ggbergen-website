@@ -30,7 +30,14 @@ const HomePage = () => {
           <HomePageP>{t("intro")}</HomePageP>
           <HomePageP>{t("intro2")}</HomePageP>
           <HomePageP>{t("intro3")}</HomePageP>
-          <HomeLink to="/eventer">{t("click here")}</HomeLink>
+          <HomeLink
+            to="/eventer"
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+          >
+            {t("click here")}
+          </HomeLink>
         </Box>
       </BgText>
     </>
