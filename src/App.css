@@ -18,26 +18,26 @@ p {
 
 .navBtn {
   display: inline;
-  margin-top: 1rem;
+  padding-top: 0.7rem;
   font-size: 1.6rem;
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
 .navBtn:hover {
-  background-color: rgb(33, 33, 33);
+  background-color: rgb(2, 0, 112);
 }
 
 .activeStyle {
   display: inline;
-  margin-top: 1rem;
+  padding-top: 0.7rem;
   font-size: 1.6rem;
   color: white;
   text-decoration: underline;
 }
 
 .activeStyle:hover {
-  background-color: rgb(33, 33, 33);
+  background-color: rgb(128, 0, 0);
 }
 
 @media (max-width: 765px) {
