@@ -1,11 +1,15 @@
-import { BgText } from "../../AppStyles";
 import Gallery from "../../GalleryImages/Gallery";
-import { Flex, GalleryImg, ImageContainer } from "./PictureStyles";
+import {
+  Flex,
+  GalleryImg,
+  ImageContainer,
+  PictureBgText,
+} from "./PictureStyles";
 
 const PicturePage = () => {
   return (
     <>
-      <BgText>
+      <PictureBgText>
         <Flex>
           {Gallery.map((item, key) => {
             return (
@@ -15,7 +19,7 @@ const PicturePage = () => {
             );
           })}
         </Flex>
-      </BgText>
+      </PictureBgText>
     </>
   );
 };

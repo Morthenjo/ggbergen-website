@@ -9,8 +9,8 @@ export const Hamburger = styled.div`
   height: 0.3rem;
   width: 3rem;
   position: relative;
-  top: 4rem;
-  left: 4rem;
+  top: 3rem;
+  left: 2rem;
   animation: ${(props) =>
     props.active
       ? "yeet 1s ease 0s alternate both "
@@ -139,25 +139,25 @@ export const Hamburger = styled.div`
   }
   @keyframes yeet {
     from {
-      left: 4rem;
-      top: 4rem;
+      left: 2rem;
+      top: 3rem;
     }
     50% {
       background: rgba(0, 0, 0, 1);
     }
     to {
-      top: 4rem;
+      top: 3rem;
       background: rgba(0, 0, 0, 0);
     }
   }
   @keyframes yeet-after {
     from {
-      top: 4rem;
+      top: 3rem;
       background: rgba(0, 0, 0, 0);
     }
     to {
-      left: 4rem;
-      top: 4rem;
+      left: 2rem;
+      top: 3rem;
     }
   }
 `;

@@ -41,7 +41,7 @@ export const BgText = styled.div`
   text-align: center;
   animation-duration: 0.3s;
   @media (max-width: 1000px) {
-    padding: 0;
+    padding: 5% 0 0;
     margin: 0;
     width: 100%;
     border: 1px solid rgb(0, 0, 0, 0);

@@ -18,6 +18,7 @@ import FindUsPage from "../../Pages/findUsPage/FindUsPage";
 import PicturePage from "../../Pages/picturePage/PicturePage";
 import ContactPage from "../../Pages/contactPage/ContactPage";
 import { Hamburger } from "./hamburger";
+import Member from "../../Pages/memberPage/MemberPage.js";
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -123,6 +124,7 @@ const Navbar = () => {
         <Route path="/picture" element={<PicturePage />} />
         <Route path="/eventer" element={<EventPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/member" element={<Member />} />
       </Routes>
     </>
   );
